@@ -5,23 +5,21 @@
  */
 int main(void)
 {
-	int n, m;
-	for (n = 48; n <= 56; n++)
-	{
-		for (m = 49; m <= 57; m++)
-		{
-			if (m > n)
-			{
-				putchar(n);
-                                putchar(m);
-                                if (n != 56 || m !=57)
-				{
-					putchar('.');
-                                        putchar(' ');
-				}
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+int digit1, digit2;
+for (digit1 = 0; digit1 <= 8; digit1++)
+{
+for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
 }
+putchar((digit1 % 10) + '0'); /* Print tens digit of digit1 */
+putchar((digit2 % 10) + '0'); /* Print tens digit of digit2 */
+if (digit1 != 8 || digit2 != 9) /* Check the last combination */
+{
+putchar(','); /* Print comma */
+putchar(' '); /* Print space */
+}
+}
+}
+putchar('\n'); /* Print newline */
+return (0);
+}
+	

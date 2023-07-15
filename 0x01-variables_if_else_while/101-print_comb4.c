@@ -15,7 +15,7 @@ for (digit3 = digit2 + 1; digit3 <= 9; digit3++)
 putchar((digit1 % 10) + '0'); /* Print tens digit of digit1 */
 putchar((digit2 % 10) + '0'); /* Print tens digit of digit2 */
 putchar((digit3 % 10) + '0'); /* Print tens digit of digit3 */
-if (digit1 != 7 || digit2 != 8 || digit3 != 9) /* Check if it's the last combination */
+if (digit1 != 7 || digit2 != 8 || digit3 != 9) /* Last combination */
 {
 putchar(','); /* Print comma */
 putchar(' '); /* Print space */

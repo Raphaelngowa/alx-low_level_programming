@@ -3,23 +3,24 @@
  * main - Output combi nations of two digits.
  * Return: Ever 0 (Excellent)
  */
+
 int main(void)
 {
-int digit1, digit2;
-for (digit1 = 0; digit1 <= 8; digit1++)
+int i, j;
+for (i = 0; i < 9; i++)
 {
-for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
-}
-putchar((digit1 % 10) + '0'); /* Print tens digit of digit1 */
-putchar((digit2 % 10) + '0'); /* Print tens digit of digit2 */
-if (digit1 != 8 || digit2 != 9) /* Check the last combination */
+for (j = i + 1; j <= 9; j++)
 {
-putchar(','); /* Print comma */
-putchar(' '); /* Print space */
+putchar(i + '0');
+putchar(j + '0');
+if (i != 8 || j != 9)
+{
+putchar(',');
+putchar(' ');
 }
 }
 }
-putchar('\n'); /* Print newline */
+
+putchar('\n');
 return (0);
 }
-	

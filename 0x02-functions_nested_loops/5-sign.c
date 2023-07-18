@@ -2,7 +2,7 @@
 
 /**
  * print sign - Prints the sign of a number
- * @c: Checked number
+ * @n: Checked number
  * Return: 1 for +ve number & -1 for -ve number & 0 for anything else
  */
 

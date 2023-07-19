@@ -1,26 +1,30 @@
 #include <stdio.h>
-#include "main.h"
 /**
- * main - Prints the first 98 Fibonacci numbers starting with 1 & 2 separated by a comma,followed by a space.
- * Return: Ever 0
+ * main - Finds and print the first 98 Fibonacci numbers starting from 1 & 2,
+ * Return: Always 0 (Excellent)
  */
-unsigned long a = 1,b = 2,c;
-int main(void)
+
+void print_fibonacci_numbers(int count) 
 {
-printf("%lu, %lu,",a,b);
-for(int i=0;i<98;i++)
+int first = 1, second = 2;
+int next;
+printf("%d, %d, ", first, second);
+for (int i = 3; i <= count; ++i) 
 {
-c = a + b;
-a = b;
-b = c;
-if(i != 97)
-{ 
-printf(" %lu, ",c);
-}else
-{	
-printf(" %lu",c);
+next = first + second;
+printf("%d", next);
+if (i < count)
+{
+printf(", ");
 }
+first = second;
+second = next;
 }
 printf("\n");
-return (0);
+}
+int main() 
+{
+int count = 98;
+print_fibonacci_numbers(count);
+return 0;
 }

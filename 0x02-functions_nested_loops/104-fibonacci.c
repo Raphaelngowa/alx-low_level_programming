@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * main - Finds and print the first 98 Fibonacci numbers starting from 1 & 2,
  * Return: Always 0 (Excellent)

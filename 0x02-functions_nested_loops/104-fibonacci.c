@@ -4,7 +4,7 @@
  * main - Prints the first 98 Fibonacci numbers starting with 1 & 2 separated by a comma,followed by a space.
  * Return: Ever 0
  */
-long a = 1,b = 2,c;
+unsigned long a = 1,b = 2,c;
 int main(void)
 {
 printf("%lu, %lu,",a,b);

@@ -2,14 +2,16 @@
 
 /**
  * _puts - prints a string followed by a new.
- * @str: the string*/
+ * @str: the string
+ */
  int _putchar(char c);
- /*Return: Void
-*/
+/*Return: Void
+ */
 
-void _puts(const char *str) {
+void _puts(char *str)
+{
 int i = 0;
-while (str[i] != '\0') 
+while (str[i] != '\0')
 {
 _putchar(str[i]);
 i++;
